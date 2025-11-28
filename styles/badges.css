@@ -1,0 +1,50 @@
+/**
+ * Small badges
+ */
+.opensciencebadges-sm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.opensciencebadges-sm .opensciencebadge {
+  display: grid;
+  grid-template-columns: 2em 1fr;
+  gap: 0.75em;
+}
+
+/**
+ * Large badges
+ */
+.opensciencebadges-lg {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.opensciencebadges-lg-badges {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  max-width: 100%;
+}
+
+.opensciencebadges-lg-badges img {
+  max-width: 155px; /* large image width */
+  min-width: 0;
+}
+
+.opensciencebadges-lg-descs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+
+/**
+ * When the badges appear in the article details section
+ * (the sidebar in the default theme)
+ */
+.opensciencebadges-article-details .opensciencebadges {
+  margin-top: 0.75em;
+}
