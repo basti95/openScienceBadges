@@ -9,10 +9,10 @@
   <div class="opensciencebadges-lg-descs">
     {foreach from=$osbBadges item="badge"}
       {if $badge.desc|@trim}
-        <div class="opensciencebadge-desc">
+        <p class="opensciencebadge-desc">
           <strong class="opensciencebadge-label">{$badge.name}</strong>
           {$badge.desc|strip_unsafe_html}
-        </div>
+        </p>
       {/if}
     {/foreach}
   </div>

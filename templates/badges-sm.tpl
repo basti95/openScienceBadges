@@ -3,9 +3,9 @@
     {if $badge.desc|@trim}
       <div class="opensciencebadge">
         <img src="{$badge.url}" alt="{$badge.alt|escape|default:""}" />
-        <div class="opensciencebadge-desc">
+        <p class="opensciencebadge-desc">
           {$badge.desc|strip_unsafe_html}
-        </div>
+        </p>
       </div>
     {/if}
   {/foreach}

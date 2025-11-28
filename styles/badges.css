@@ -13,9 +13,19 @@
   gap: 0.75em;
 }
 
+.opensciencebadges-sm .opensciencebadge img {
+  width: 100%;
+  height: auto;
+}
+
+.opensciencebadges-sm .opensciencebadge p {
+  margin-top: 0;
+}
+
 /**
  * Large badges
  */
+
 .opensciencebadges-lg {
   display: flex;
   flex-direction: column;
@@ -25,20 +35,17 @@
 .opensciencebadges-lg-badges {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 1.5rem;
   max-width: 100%;
 }
 
 .opensciencebadges-lg-badges img {
-  max-width: 155px; /* large image width */
+  max-width: 8em;
   min-width: 0;
 }
 
-.opensciencebadges-lg-descs {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75em;
+.opensciencebadges-lg-descs .opensciencebadge-desc {
+  margin-top: 0;
 }
 
 /**
