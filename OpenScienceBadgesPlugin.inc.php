@@ -221,8 +221,22 @@ class OpenScienceBadgesPlugin extends GenericPlugin
             return false;
         }
 
+        $context = Application::get()->getRequest()->getContext();
+        $location = $this->getSetting($context->getId(), self::SETTING_LOCATION);
+        if (
+            $location === self::LOCATION_NONE
+            || ($location === self::LOCATION_DETAILS && $hookName !== 'Templates::Article::Details')
+            || ($location === self::LOCATION_MAIN && $hookName !== 'Templates::Article::Main')
+        ) {
+            return false;
+        }
+
+        $size = $this->getSetting($context->getId(), self::SETTING_SIZE);
+
         $templateMgr->assign([
-            'osbBadgesDisplay' => $this->getLargeBadgesHTML($publication, $templateMgr),
+            'osbBadgesDisplay' => $size === self::SIZE_LARGE
+                ? $this->getLargeBadgesHTML($publication, $templateMgr)
+                : $this->getSmallBadgesHTML($publication, $templateMgr),
         ]);
 
         $output .= $templateMgr->fetch($this->getTemplateResource('article-details.tpl'));
@@ -270,13 +284,18 @@ class OpenScienceBadgesPlugin extends GenericPlugin
      */
     public function getBadges(Publication $publication, string $size): array
     {
+        $color = $this->getSetting(Application::get()->getRequest()->getContext()->getId(), self::SETTING_COLOR);
+        if (!$color) {
+            $color = self::DEFAULT_COLOR;
+        }
+
         $badges = [];
         foreach (self::BADGES as $badge) {
             $badges[] = [
                 'name' => __("plugins.generic.openScienceBadges.badgeTitleFormat", ['title' => __("plugins.generic.openScienceBadges.{$badge}")]),
                 'alt' => __("plugins.generic.openScienceBadges.{$badge}.alt"),
                 'desc' => $publication->getLocalizedData($this->getPropName($badge)),
-                'url' => $this->getPluginUrl() . "/images/{$badge}_{$size}_color.png",
+                'url' => $this->getPluginUrl() . "/images/{$badge}_{$size}_{$color}.png",
             ];
         }
         return $badges;
