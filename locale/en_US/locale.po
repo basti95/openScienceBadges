@@ -56,13 +56,13 @@ msgid "plugins.generic.openScienceBadges.settings.color.color"
 msgstr "Color"
 
 msgid "plugins.generic.openScienceBadges.settings.location"
-msgstr "Show Badges on Articles"
+msgstr "Show Badges"
 
 msgid "plugins.generic.openScienceBadges.settings.location.desc"
-msgstr "Choose where to display the badges on the article landing page. This is typically in the sidebar (Article Details) or below the abstract (Article Main). Select None if your theme can display the badges itself. This will prevent the plugin from automatically injecting the badges into the article page."
+msgstr "Choose where to show the badges on the article landing page. For most themes, the plugin can automatically add the badges to the sidebar (Article Details) or below the abstract (Article Main). Some themes may add the badges directly. If that's the case, select None to preven the plugin from automatically adding the badges to the page."
 
 msgid "plugins.generic.openScienceBadges.settings.location.details"
-msgstr "Article Details Section (usually the sidebar)"
+msgstr "Article Details Section (usually in the sidebar)"
 
 msgid "plugins.generic.openScienceBadges.settings.location.main"
 msgstr "Article Main Section (usually below the abstract)"
