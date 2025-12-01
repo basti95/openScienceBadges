@@ -235,8 +235,8 @@ class OpenScienceBadgesPlugin extends GenericPlugin
 
         $templateMgr->assign([
             'osbBadgesDisplay' => $size === self::SIZE_LARGE
-                ? $this->getLargeBadgesHTML($publication, $templateMgr)
-                : $this->getSmallBadgesHTML($publication, $templateMgr),
+                ? $this->getLargeBadgesHTML($publication, $templateMgr, $location)
+                : $this->getSmallBadgesHTML($publication, $templateMgr, $location),
         ]);
 
         $output .= $templateMgr->fetch($this->getTemplateResource('article-details.tpl'));
@@ -247,10 +247,11 @@ class OpenScienceBadgesPlugin extends GenericPlugin
     /**
      * Get the HTML display of the badges in small mode
      */
-    public function getSmallBadgesHTML(Publication $publication, TemplateManager $templateMgr): string
+    public function getSmallBadgesHTML(Publication $publication, TemplateManager $templateMgr, string $location = self::DEFAULT_LOCATION): string
     {
         $templateMgr->assign([
             'osbBadges' => $this->getBadges($publication, self::SIZE_SMALL),
+            'location' => $location,
         ]);
 
         return $templateMgr->fetch($this->getTemplateResource('badges-sm.tpl'));
@@ -259,10 +260,11 @@ class OpenScienceBadgesPlugin extends GenericPlugin
     /**
      * Get the HTML display of the badges in large mode
      */
-    public function getLargeBadgesHTML(Publication $publication, TemplateManager $templateMgr): string
+    public function getLargeBadgesHTML(Publication $publication, TemplateManager $templateMgr, string $location = self::DEFAULT_LOCATION): string
     {
         $templateMgr->assign([
             'osbBadges' => $this->getBadges($publication, self::SIZE_LARGE),
+            'location' => $location,
         ]);
 
         return $templateMgr->fetch($this->getTemplateResource('badges-lg.tpl'));

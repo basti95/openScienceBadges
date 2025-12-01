@@ -8,7 +8,7 @@
  * This template is designed to mimic the HTML/CSS structure
  * similar blocks on the article page.
  *}
-<div class="item opensciencebadges-article-details">
+<div class="item opensciencebadges opensciencebadges-article-{$location|escape}">
   <h2 class="label">
     {translate key="plugins.generic.openScienceBadges.displayName"}
   </h2>
