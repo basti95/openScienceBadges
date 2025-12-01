@@ -186,8 +186,13 @@ class OpenScienceBadgesPlugin extends GenericPlugin
         foreach (self::BADGES as $badge) {
             $form->addField(
                 new FieldText($this->getPropName($badge), [
-                    'label' => $badge,
+                    'label' => __("plugins.generic.openScienceBadges.{$badge}"),
+                    'tooltip' =>  __(
+                        "plugins.generic.openScienceBadges.{$badge}.desc",
+                        ['url' => 'https://www.cos.io/initiatives/badges']
+                    ),
                     'isMultilingual' => true,
+                    'size' => 'large',
                     'value' => $submission->getCurrentPublication()->getData($this->getPropName($badge)),
                 ])
             );

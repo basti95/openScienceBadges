@@ -10,11 +10,17 @@ msgstr "Open Data"
 msgid "plugins.generic.openScienceBadges.data.alt"
 msgstr "The Open Data badge indicating that the authors have met the disclosure criteria for open research data."
 
+msgid "plugins.generic.openScienceBadges.data.desc"
+msgstr "An optional disclosure statement describing how this publication meets the disclosure criteria for open research data. <a href=\"{$url}\" target=\"_blank\">Learn more</a>"
+
 msgid "plugins.generic.openScienceBadges.materials"
 msgstr "Open Materials"
 
 msgid "plugins.generic.openScienceBadges.materials.alt"
 msgstr "The Open Materials badge indicating that the authors have met the disclosure criteria for open research material."
+
+msgid "plugins.generic.openScienceBadges.materials.desc"
+msgstr "An optional disclosure statement describing how this publication meets the disclosure criteria for open research materials. <a href=\"{$url}\" target=\"_blank\">Learn more</a>"
 
 msgid "plugins.generic.openScienceBadges.preregistered"
 msgstr "Preregistered"
@@ -22,11 +28,17 @@ msgstr "Preregistered"
 msgid "plugins.generic.openScienceBadges.preregistered.alt"
 msgstr "The Preregistered badge indicating that the authors have preregistered the research plan."
 
+msgid "plugins.generic.openScienceBadges.preregistered.desc"
+msgstr "An optional disclosure statement describing how the authors met the criteria for a preregistered research plan. <a href=\"{$url}\" target=\"_blank\">Learn more</a>"
+
 msgid "plugins.generic.openScienceBadges.preregisteredplus"
 msgstr "Preregisterd Plus"
 
 msgid "plugins.generic.openScienceBadges.preregisteredplus.alt"
 msgstr "The Preregistered Plus badge indicating that the authors have preregistered the research plan and published an analysis of any changes to this plan."
+
+msgid "plugins.generic.openScienceBadges.preregisteredplus.desc"
+msgstr "An optional disclosure statement describing how the authors met the criteria for a preregistered research plan and an analysis of any changes to this plan. <a href=\"{$url}\" target=\"_blank\">Learn more</a>"
 
 msgid "plugins.generic.openScienceBadges.badgeTitleFormat"
 msgstr "{$title}:"
