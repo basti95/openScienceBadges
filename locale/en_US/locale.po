@@ -32,7 +32,7 @@ msgid "plugins.generic.openScienceBadges.preregistered.desc"
 msgstr "An optional disclosure statement describing how the authors met the criteria for a preregistered research plan. <a href=\"{$url}\" target=\"_blank\">Learn more</a>"
 
 msgid "plugins.generic.openScienceBadges.preregisteredplus"
-msgstr "Preregisterd Plus"
+msgstr "Preregistered Plus"
 
 msgid "plugins.generic.openScienceBadges.preregisteredplus.alt"
 msgstr "The Preregistered Plus badge indicating that the authors have preregistered the research plan and published an analysis of any changes to this plan."
