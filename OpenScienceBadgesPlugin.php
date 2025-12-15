@@ -10,6 +10,7 @@ use PKP\components\forms\FieldRichText;
 use PKP\components\forms\FieldText;
 use PKP\components\forms\FormComponent;
 use PKP\components\forms\publication\PKPMetadataForm;
+use PKP\config\Config;
 use PKP\context\Context;
 use PKP\core\JSONMessage;
 use PKP\handler\APIHandler;
@@ -188,6 +189,9 @@ class OpenScienceBadgesPlugin extends GenericPlugin
             return false;
         }
 
+        $allowedHtml = Config::getVar('security', 'allowed_title_html', 'b,i,u,sup,sub');
+        $allowedHtml .= ',a';
+
         foreach (self::BADGES as $badge) {
             $form->addField(
                 new FieldRichText($this->getPropName($badge), [
@@ -196,6 +200,9 @@ class OpenScienceBadgesPlugin extends GenericPlugin
                         "plugins.generic.openScienceBadges.{$badge}.desc",
                         ['url' => 'https://www.cos.io/initiatives/badges']
                     ),
+                    'plugins' => ['link'],
+                    'toolbar' => 'bold italic superscript subscript link',
+                    'validElements' => $allowedHtml,
                     'isMultilingual' => true,
                     'value' => $form->publication->getData($this->getPropName($badge)),
                 ])
