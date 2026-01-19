@@ -1,0 +1,74 @@
+msgid "plugins.generic.openScienceBadges.displayName"
+msgstr "Open-Science-Badges"
+
+msgid "plugins.generic.openScienceBadges.description"
+msgstr "Zuweisen und Anzeigen der vom Center for Open Science erstellten Badges."
+
+msgid "plugins.generic.openScienceBadges.data"
+msgstr "Open Data"
+
+msgid "plugins.generic.openScienceBadges.data.desc"
+msgstr "Eine optionale Erklärung, die beschreibt, wie diese Veröffentlichung die Kriterien für offene Forschungsdaten erfüllt. <a href=\"{$url}\" target=\"_blank\">Mehr erfahren</a>"
+
+msgid "plugins.generic.openScienceBadges.materials"
+msgstr "Open Materials"
+
+msgid "plugins.generic.openScienceBadges.materials.desc"
+msgstr "Eine optionale Erklärung, die beschreibt, wie diese Veröffentlichung die Kriterien für offene Forschungsmaterialien erfüllt. <a href=\"{$url}\" target=\"_blank\">Mehr erfahren</a>"
+
+msgid "plugins.generic.openScienceBadges.preregistered"
+msgstr "Vorregistriert"
+
+msgid "plugins.generic.openScienceBadges.preregistered.desc"
+msgstr "Eine optionale Erklärung, die beschreibt, wie die Autorinnen und Autoren die Kriterien für einen vorregistrierten Forschungsplan erfüllt haben. <a href=\"{$url}\" target=\"_blank\">Mehr erfahren</a>"
+
+msgid "plugins.generic.openScienceBadges.preregisteredplus"
+msgstr "Preregistered Plus"
+
+msgid "plugins.generic.openScienceBadges.preregisteredplus.desc"
+msgstr "Eine optionale Erklärung, die beschreibt, wie die Autorinnen und Autoren die Kriterien für einen vorregistrierten Forschungsplan erfüllt haben sowie eine Analyse etwaiger Änderungen an diesem Plan. <a href=\"{$url}\" target=\"_blank\">Mehr erfahren</a>"
+
+msgid "plugins.generic.openScienceBadges.badgeTitleFormat"
+msgstr "{$title}:"
+
+msgid "plugins.generic.openScienceBadges.settings.size"
+msgstr "Badge-Größe"
+
+msgid "plugins.generic.openScienceBadges.settings.size.desc"
+msgstr "Wählen Sie, ob die Badges im großen oder kleinen Format angezeigt werden sollen."
+
+msgid "plugins.generic.openScienceBadges.settings.size.small"
+msgstr "Klein"
+
+msgid "plugins.generic.openScienceBadges.settings.size.large"
+msgstr "Groß"
+
+msgid "plugins.generic.openScienceBadges.settings.color"
+msgstr "Badge-Farbe"
+
+msgid "plugins.generic.openScienceBadges.settings.color.desc"
+msgstr "Wählen Sie, ob die Badges in Grau oder in Farbe angezeigt werden sollen."
+
+msgid "plugins.generic.openScienceBadges.settings.color.gray"
+msgstr "Grau"
+
+msgid "plugins.generic.openScienceBadges.settings.color.color"
+msgstr "Farbe"
+
+msgid "plugins.generic.openScienceBadges.settings.location"
+msgstr "Badges anzeigen"
+
+msgid "plugins.generic.openScienceBadges.settings.location.desc"
+msgstr "Wählen Sie, wo die Badges auf der Artikelseite angezeigt werden sollen. Bei den meisten Themes kann das Plugin die Badges automatisch in der Seitenleiste (Artikeldetails) oder unterhalb des Abstracts (Hauptbereich des Artikels) einfügen. Einige Themes fügen die Badges direkt ein. Falls dies zutrifft, wählen Sie »Keine«, um zu verhindern, dass das Plugin die Badges automatisch zur Seite hinzufügt."
+
+msgid "plugins.generic.openScienceBadges.settings.location.details"
+msgstr "Bereich \"Artikeldetails\" (meist in der Seitenleiste)"
+
+msgid "plugins.generic.openScienceBadges.settings.location.main"
+msgstr "Hauptbereich des Artikels (meist unterhalb des Abstracts)"
+
+msgid "plugins.generic.openScienceBadges.settings.location.none"
+msgstr "Keine (Badges nicht automatisch zur Artikelseite hinzufügen)"
+
+msgid "plugins.generic.openScienceBadges.settings.saved"
+msgstr "Einstellungen für Open-Science-Badges erfolgreich gespeichert."
