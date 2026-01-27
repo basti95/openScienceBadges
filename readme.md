@@ -19,3 +19,22 @@ You can change how and where the badges are displayed by going to **Settings > P
 ## When should I use Open Science Badges?
 
 The [Center for Open Science](https://www.cos.io/initiatives/badges) provides guidance on the criteria for awarding Open Science Badges and examples of disclosure statements that must accompany the badges.
+
+## Package and Release
+
+Update the version and date in the `version.xml` file.
+
+```
+<release>[version]</release>
+<date>[YYYY-MM-DD]</date>
+```
+
+Create a `.tar.gz` package of this plugin by running the following command in the directory above the plugin.
+
+```
+tar -czf openScienceBadges-<version>.tar.gz --exclude-ignore=.tarignore openScienceBadges
+```
+
+## Credits
+
+This plugin was created thanks to funding from SLUB Dresden for the [Individualize Theme by Publia](https://github.com/NateWr/individualizeTheme).
