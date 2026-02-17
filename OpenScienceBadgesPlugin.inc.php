@@ -229,7 +229,8 @@ class OpenScienceBadgesPlugin extends GenericPlugin
         $context = Application::get()->getRequest()->getContext();
         $location = $this->getSetting($context->getId(), self::SETTING_LOCATION);
         if (
-            $location === self::LOCATION_NONE
+            !is_string($location)
+            || $location === self::LOCATION_NONE
             || ($location === self::LOCATION_DETAILS && $hookName !== 'Templates::Article::Details')
             || ($location === self::LOCATION_MAIN && $hookName !== 'Templates::Article::Main')
         ) {
